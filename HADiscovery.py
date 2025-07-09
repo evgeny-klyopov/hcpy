@@ -122,7 +122,7 @@ def publish_ha_discovery(discovery_yaml_path, device, client, mqtt_topic, events
             "name": friendly_name,
             "device": device_info,
             "state_topic": state_topic,
-            "availability_mode": "all",
+            "availability_mode": "any",
             "availability": [{"topic": f"{base_topic}/LWT"}, {"topic": f"{mqtt_topic}/LWT"}],
             "object_id": f"{device_ident}_{feature_id}",
             "unique_id": f"{device_ident}_{feature_id}",
